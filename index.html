@@ -1,161 +1,133 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Uniform Permit</title>
-    <style>
-        button {
-            width: 90px;
-            height: 26px;
-            cursor: pointer;
-        }
+<style>
+	button{
+		width:90px;
+		height:26px;
+		cursor:pointer;
+	}
+	div{
+		width: 800px;
+		text-align: left;
+		margin-top:10px;
+		margin-bottom: 50px;
+	}
+	@media print{    
+		div{ display: none; }
+	}
+</style>
 
-        /* * MODIFICATION:
-         * - Changed width from 800px to 90% to make it flexible.
-         * - Added max-width: 800px; so it doesn't get TOO wide on large screens.
-         * - Added margin-left: auto; and margin-right: auto; to center the div itself.
-        */
-        div {
-            width: 90%;
-            max-width: 800px;
-            text-align: left;
-            margin-top: 10px;
-            margin-bottom: 50px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        @media print {
-            div {
-                display: none;
-            }
-        }
-    </style>
-
-    <style type="text/css" media="print">
-        @page {
-            size: landscape;
-        }
-    </style>
-</head>
-<body>
+<style type="text/css" media="print">
+    @page { 
+        size: landscape;
+    }
+</style>
 
 
-    <center>
-        <div><button onClick="window.print();">Print</button></div>
-        
-    
-        <table width="90%" cellpadding="2" cellspacing="2" style="border-bottom:2px solid black; max-width: 800px; margin: 0 auto;">
-            <tr>
-                <td align="left" valign="top">
-                    <!-- Added a fallback for the logo -->
-                    <img src="logo_3.png" width="90" alt="Logo" onerror="this.src='https://placehold.co/90x90/ccc/000?text=Logo'; this.onerror=null;"/>
-                </td>
-                <td align="left" valign="top" style="line-height:22px;font-size:17px;">
-                    <b><p align="center">КЫРГЫЗ РЕСПУБЛИКАСЫНЫН ТЫШКY ИШТЕР МИНИСТРЛИГИ</p>
-                    <p align="center">MINISTRY OF FOREIGN AFFAIRS OF THE KYRGYZ REPUBLIC</p>
-                    <p align="center"><strong>Бирдиктүү уруксат/Uniform permit</strong></p></b><br>
-                </td>
-                <td align="right" valign="middle">
-                    <!-- This cell was empty, which is fine -->
-                </td>
-            </tr>
-        </table>
-        <br>
-        
-        <!-- 
-         * MODIFICATION:
-         * - Changed width from 800 to 90%.
-         * - Added style="max-width: 800px; margin: 0 auto;" to center the table.
-        -->
-        <table width="90%" cellpadding="2" cellspacing="2" style="max-width: 800px; margin: 0 auto;">
-            <tr>
-                <td>
-                    <!-- Added a fallback for the photo -->
-                    <img src="GetFile.jpeg" width="110" alt="Permit Photo" onerror="this.src='https://placehold.co/110x150/ccc/000?text=Photo'; this.onerror=null;"/>
-                </td>
-                <td align="right" valign="top"> <!-- Added valign="top" for better alignment -->
-                    Арыздын номери/Reference number C_04446421<br>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    <table width="100%" cellpadding="2" cellspacing="2">
-                        <!-- All content below is unchanged -->
-                        <tr>
-                            <td>Толук аты-жөнү/Full name:</td>
-                            <td>MUHAMMAD FARHAN</td>
-                        </tr>
-                        <tr>
-                            <td>Туулган датасы/Date of birth:</td>
-                            <td>06-04-2006</td>
-                        </tr>
-                        <tr>
-                            <td>Жарандыгы/Citizenship:</td>
-                            <td>Pakistan</td>
-                        </tr>
-                        <tr>
-                            <td>Жол жүрүүчү документтин (паспорттун) номери /<br>Number of Travel document (passport):</td>
-                            <td>BF8940092</td>
-                        </tr>
-                        <tr>
-                            <td>Жол жүрүүчү документтин түрү/Type of travel document:</td>
-                            <td>Ordinary</td>
-                        </tr>
-                        <tr>
-                            <td>Жол жүрүүчү документтин (паспорттун) берилген датасы/ <br> DATE of issue of the travelling document (passport):</td>
-                            <td>12-07-2023</td>
-                        </tr>
-                        <tr>
-                            <td>Жол жүрүүчү документтин (паспорттун) бүткөн датасы/<br> Date of expiry of the travelling document (passport):</td>
-                            <td>11-07-2028</td>
-                        </tr>
-                        <tr>
-                            <td>Бирдиктүү документтин мөөнөтү /<br>Validity of uniform permit:</td>
-                            <td>03-11-2025 - 02-01-2026</td>
-                        </tr>
-                        <tr>
-                            <td>Визанын түрү/Type of visa:</td>
-                            <td>W-Working visa</td>
-                        </tr>
-                        <tr>
-                            <td>Визанын колдонулуу мөөнөтү/Validity of visa:</td>
-                            <td>03-11-2025 - 02-01-2026</td>
-                        </tr>
-                        <tr>
-                            <td>Кирүүлөрдүн саны/Number of entries:</td>
-                            <td>MULTI ENTRY</td>
-                        </tr>
-                        <tr>
-                            <td>Жүрүү мөөнөтү/Period of stay(days):</td>
-                            <td>59</td>
-                        </tr>
-                        <tr>
-                            <td>Чакыруучу тарап/Invitation party:</td>
-                            <td>ИП Бакытбекова Айпери Бакытбековна</td>
-                        </tr>
-                        <tr>
-                            <td>Чакыруу тараптын жеке салык номери/<br>Inviting party's individual taxpayer number</td>
-                            <td>10604199305621</td>
-                        </tr>
-                        <tr>
-                            <td>Иштөөгө уруксут/The right to work:</td>
-                            <td>Uniform permit</td>
-                        </tr>
-                        <tr>
-                            <td>Берилген датасы/Date of issue:</td>
-                            <td>2025-11-03</td>
-                        </tr>
-                        <tr>
-                            <td align="center" colspan="2"><br><b>Validity period of a visa is generally longer than period of stay. The validity period establishes the first and last dates during which the visa can be used. Period of stay indicates the length of time you have permission to remain in Kyrgyzstan within the validity period of the visa.</b></td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-        </table>
-    </center>
 
-</body>
-</html>
+<center>
+    <div><button onClick="window.print();">Print</button></div>
+    <table width="800" cellpadding="2" cellspacing="2" style="border-bottom:2px solid black;">
+        <tr>
+            <td align="left" valign="top">
+                <img src="logo_3.png" width="90" />
+            </td>
+            <td align="left" valign="top" style="line-height:22px;font-size:17px;">
+                <b><p align="center">КЫРГЫЗ РЕСПУБЛИКАСЫНЫН ТЫШКЫ ИШТЕР МИНИСТРЛИГИ</p>
+<p align="center">MINISTRY OF FOREIGN AFFAIRS OF THE KYRGYZ REPUBLIC</p>
+<p align="center"><strong>Бирдиктүү уруксат/Uniform permit</strong></p></b><br>
+            </td>
+            <td align="right" valign="middle">
+
+            </td>
+        </tr>
+    </table>    
+    <br>
+    <table width="800" cellpadding="2" cellspacing="2">
+        <tr>
+        	<td>
+            	<img src="GetFile.jpeg" width="110" />
+            </td>
+            <td align="right">
+				Арыздын номери/Reference number C_04446421<br>
+            </td>
+        </tr>
+        <tr>
+        	<td colspan="2">
+				<table width="100%" cellpadding="2" cellspacing="2">
+                                        <tr>
+                        <td>Толук аты-жөнү/Full name:</td>
+                        <td>MUHAMMAD FARHAN</td>
+                    </tr>
+                    <tr>
+                        <td>Туулган датасы/Date of birth:</td>
+                        <td>06-04-2006</td>
+                    </tr>
+                    <tr>
+                        <td>Жарандыгы/Citizenship:</td>
+                        <td>Pakistan</td>
+                    </tr>
+                    <tr>
+                        <td>Жол жүрүүчү документтин (паспорттун) номери /<br>Number of Travel document (passport):</td>
+                        <td>BF8940092</td>
+                    </tr>
+                    <tr>
+                        <td>Жол жүрүүчү документтин түрү/Type of travel document:</td>
+                        <td>Ordinary</td>
+                    </tr>
+                    <tr>
+                        <td>Жол жүрүүчү документтин (паспорттун) берилген датасы/ <br> DATE of issue of the travelling document (passport):</td>
+                        <td>12-07-2023</td>
+                    </tr>
+                    <tr>
+                        <td>Жол жүрүүчү документтин (паспорттун) бүткөн датасы/<br> Date of expiry of the travelling document (passport):</td>
+                        <td>11-07-2028</td>
+                    </tr>
+                    <tr>
+                        <td>Бирдиктүү документтин мөөнөтү /<br>Validity of uniform permit:</td>
+                        <td>03-11-2025 - 02-01-2026</td>
+                    </tr>
+                    <tr>
+                        <td>Визанын түрү/Type of visa:</td>
+                        <td>W-Working visa</td>
+                    </tr>
+                    <tr>
+                        <td>Визанын колдонулуу мөөнөтү/Validity of visa:</td>
+                        <td>03-11-2025 - 02-01-2026</td>
+                    </tr>
+                    <tr>
+                        <td>Кирүүлөрдүн саны/Number of entries:</td>
+                        <td>MULTI ENTRY</td>
+                    </tr>
+                    <tr>
+                        <td>Жүрүү мөөнөтү/Period of stay(days):</td>
+                        <td>59</td>
+                    </tr>
+                    <tr>
+                        <td>Чакыруучу тарап/Invitation party:</td>
+                        <td>ИП Бакытбекова Айпери Бакытбековна</td>
+                    </tr>
+                    <tr>
+                        <td>Чакыруу тараптын жеке салык номери/<br>Inviting party's individual taxpayer number</td>
+                        <td>10604199305621</td>
+                    </tr>
+                    <tr>
+                        <td>Иштөөгө уруксут/The right to work:</td>
+                        <td>Uniform permit</td>
+                    </tr>
+
+                    <tr>
+                        <td>Берилген датасы/Date of issue:</td>
+                        <td>2025-11-03</td>
+                    </tr>
+                    <tr>
+                        <td align="center" colspan="2"><br><b>Validity period of a visa is generally longer than period of stay. The validity period establishes the first and last dates during which the visa can be used. Period of stay indicates the length of time you have permission to remain in Kyrgyzstan within the validity period of the visa.</b></td>
+                    </tr>
+                </table>
+            <td>
+        </tr>
+    </table>
+</center>
+
+
+
+
 
